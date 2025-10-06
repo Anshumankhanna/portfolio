@@ -1,40 +1,62 @@
+.anim-underline {
+	--_clr-underline: var(--clr-underline, #fff);
+	--_w-underline: var(--w-underline, 70%);
+
+	position: relative;
+
+	&::after {
+		content: "";
+
+		display: block;
+
+		width: 0%;
+		height: 1px;
+
+		position: absolute;
+		left: calc((100% - var(--_w-underline)) / 2);
+
+		background-color: var(--_clr-underline);
+
+		transition:
+			width linear 0.5s;
+	}
+
+	&:hover::after {
+		width: var(--_w-underline);
+	}
+}
+
 .bold {
 	font-weight: bold;
 }
 
 .button {
-	padding: 0.25rem 0.75rem;
-
+	padding: var(--p-button);
 	border: 1px solid transparent;
 
-
 	&:hover {
-		border: 1px solid var(--green-primary);
+		border: 1px solid var(--clr-select);
 		border-radius: 100vw;
 
-		color: var(--green-primary);
+		color: var(--clr-select);
 		text-decoration: none;
 	}
 }
 
-.grid-item1 {
-	grid-area: a;
+/* NOTE: If we have two elements such that one is nested inside the other and the internal element contains all the contents and the external one exists for semantic meaning only (or some other purpose), we must always give the `container--padded` class to the internal element and not the external element.
+ * In short, `container--padded` class is to be given to the immediate parent that contains all elements and not a grand-parent container that only contains the parent container element. */
+.container--padded {
+	padding: var(--p-container);
 }
 
-.grid-item2 {
-	grid-area: b;
-}
-
-.grid-item3 {
-	grid-area: c;
-}
-
-.grid-item4 {
-	grid-area: d;
+.section--border {
+	border: 2px solid;
+	border-radius: 1rem;
 }
 
 .text-highlight {
-	font-size: 1.5rem;
+	/* Using `em` makes sure that we are not setting a fixed highlight size for text but just always keeping it larger tthan the other text around it. */
+	font-size: 1.5em;
 }
 
 .pf-icon {

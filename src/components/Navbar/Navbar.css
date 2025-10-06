@@ -2,15 +2,34 @@
 	width: 100%;
 	height: fit-content;
 
-	border: 1px solid;
-}
+	font-size: 1.25rem;
+	font-weight: 700;
 
-.navbar>ul {
-	display: flex;
-	justify-content: center;
-	gap: var(--gap-mob-med);
+	&::after {
+		content: "";
 
-	padding: var(--p-mob-med);
+		display: block;
 
-	font-size: 1.15rem;
+		width: 95%;
+		height: 1px;
+		margin-inline: auto;
+
+		background-color: #fff;
+	}
+
+	&>ul {
+		display: flex;
+		justify-content: center;
+
+		&>li {
+			/* Here we are giving this padding so that the border that we created to appear as divider appears in the middle of two elements.
+			 * This can't be done using `margin` as `border` appears inside `margin` and we want it to appear outside the gap that we create. */
+			padding: 0 0.75em;
+			border-left: 1px solid;
+
+			&:first-child {
+				border: none;
+			}
+		}
+	}
 }

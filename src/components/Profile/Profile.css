@@ -1,43 +1,30 @@
-.profile-grid {
-	display: grid;
-	justify-content: space-between;
-	gap: 1rem 1rem;
+.profile {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
 
-	padding: var(--p-section);
+	padding-inline: 1rem;
+}
 
-	&>.about-me {
-		grid-column: 2;
-		grid-row: span 2;
+.profile__hgroup {
+	--clr-selection: red;
+}
+
+.profile__name {
+	font-size: 2.5rem;
+	font-style: italic;
+
+	@media (min-width: 900px) {
+		text-align: left;
+		font-size: 5rem;
 	}
 }
 
-.about-me {
-	width: 30ch;
-
-	text-align: justify;
-
-	&>p:first-child {
-		margin-bottom: 0.55em;
-	}
+.profile__contact-links {
+	display: flex;
+	column-gap: 0.5rem;
 }
 
-.contact-grid {
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	grid-template-rows: repeat(2, auto);
-
-	&>.grid-row {
-		grid-column: span 2;
-	}
-}
-
-.pfp {
-	width: 10rem;
-	max-width: 100%;
-	max-height: 100%;
-	aspect-ratio: 1;
-
-	border-radius: 50%;
-
-	object-fit: cover;
+.icon {
+	width: 1.75rem;
 }

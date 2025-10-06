@@ -1,0 +1,49 @@
+.projects {
+	--vertical-gap: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--vertical-gap);
+
+	width: 100%;
+	/* May reuse these values */
+	padding: var(--vertical-gap) 1.5rem;
+
+	overflow-y: auto;
+
+	@media (min-width: 900px) {
+		width: 50ch;
+	}
+}
+
+.project__card {
+	--vertical-gap: 0.45rem;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--vertical-gap);
+
+	/* May reuse these values */
+	padding: var(--vertical-gap) 1rem;
+
+	border: 1px solid;
+	border-radius: 1rem;
+
+	text-align: justify;
+
+	&>img {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 1;
+		margin-inline: auto;
+
+		border-radius: inherit;
+	}
+
+	&>h2 {
+		text-align: center;
+		text-decoration: underline;
+
+		font-size: 1.45rem;
+	}
+}

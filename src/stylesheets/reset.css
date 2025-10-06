@@ -1,3 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* TODO: Write the css for scrollbar here. */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+footer {
+	&::selection {
+		background-color: var(--_clr-selection);
+		border: 1px solid;
+		border-radius: 1rem;
+	}
+}
+
+html {
+	/* Automatically sets a light and dark theme. */
+	color-scheme: light dark;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+
+	font-family: system-ui, sans-serif;
+}
+
+body {
+	background-color: var(--dark-theme-bg-color, #27272a);
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+}
+
 a,
 a:visited,
 a:active {
@@ -8,11 +54,11 @@ a:active {
 a:hover {
 	text-decoration: underline;
 
-	color: var(--green-primary);
+	color: var(--clr-select);
 
 	/* This is for the case when we are using a link icon. */
 	&>svg {
-		fill: var(--green-primary);
+		fill: var(--clr-select);
 	}
 }
 
@@ -21,19 +67,6 @@ address {
 }
 
 img {
-	/* occupy total container space. */
-	width: 100%;
-	/* keep `aspect-ratio` unchanged. */
-	height: auto;
-	/* keep the image centered in its line. */
-	vertical-align: middle;
-	/* create distance from any text. */
-	shape-margin: 1rem;
-
-	/* when displaying an alternate low-res image behind it we should make sure that it fits the container and doesn't repeat. */
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	/* when displaying alternate text it should look different from normal text around the image. */
 	font-style: italic;
 }
