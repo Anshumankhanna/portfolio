@@ -1,0 +1,11 @@
+.skill {
+	padding: var(--p-mob-med);
+
+	&>ul {
+		list-style-type: square;
+	}
+
+	&>h2 {
+		text-decoration: underline;
+	}
+}

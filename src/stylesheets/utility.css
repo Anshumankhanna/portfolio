@@ -1,0 +1,47 @@
+.bold {
+	font-weight: bold;
+}
+
+.button {
+	padding: 0.25rem 0.75rem;
+
+	border: 1px solid transparent;
+
+
+	&:hover {
+		border: 1px solid var(--green-primary);
+		border-radius: 100vw;
+
+		color: var(--green-primary);
+		text-decoration: none;
+	}
+}
+
+.grid-item1 {
+	grid-area: a;
+}
+
+.grid-item2 {
+	grid-area: b;
+}
+
+.grid-item3 {
+	grid-area: c;
+}
+
+.grid-item4 {
+	grid-area: d;
+}
+
+.text-highlight {
+	font-size: 1.5rem;
+}
+
+.pf-icon {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+.w-fit-content {
+	width: fit-content;
+}

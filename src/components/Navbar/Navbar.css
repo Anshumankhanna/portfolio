@@ -1,0 +1,16 @@
+.navbar {
+	width: 100%;
+	height: fit-content;
+
+	border: 1px solid;
+}
+
+.navbar>ul {
+	display: flex;
+	justify-content: center;
+	gap: var(--gap-mob-med);
+
+	padding: var(--p-mob-med);
+
+	font-size: 1.15rem;
+}

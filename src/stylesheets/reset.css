@@ -1,0 +1,43 @@
+a,
+a:visited,
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+
+	color: var(--green-primary);
+
+	/* This is for the case when we are using a link icon. */
+	&>svg {
+		fill: var(--green-primary);
+	}
+}
+
+address {
+	font-style: normal;
+}
+
+img {
+	/* occupy total container space. */
+	width: 100%;
+	/* keep `aspect-ratio` unchanged. */
+	height: auto;
+	/* keep the image centered in its line. */
+	vertical-align: middle;
+	/* create distance from any text. */
+	shape-margin: 1rem;
+
+	/* when displaying an alternate low-res image behind it we should make sure that it fits the container and doesn't repeat. */
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/* when displaying alternate text it should look different from normal text around the image. */
+	font-style: italic;
+}
+
+ul {
+	list-style-type: none;
+}
