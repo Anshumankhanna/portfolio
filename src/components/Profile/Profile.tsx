@@ -1,5 +1,3 @@
-import pfp from "@/assets/images/pfp.jpg";
-
 import "@/components/Profile/Profile.css";
 
 export default function Profile() {
