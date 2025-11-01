@@ -17,8 +17,6 @@ li,
 footer {
 	&::selection {
 		background-color: var(--_clr-selection);
-		border: 1px solid;
-		border-radius: 1rem;
 	}
 }
 

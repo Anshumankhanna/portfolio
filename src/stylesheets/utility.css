@@ -67,3 +67,9 @@
 .w-fit-content {
 	width: fit-content;
 }
+
+/* TODO: Create an animation in which anything that we hover over is highglighted as such:
+ * - It gets a box shadow which makes it appear as if it moved in the z-axis.
+ * - It gets a color highlight around it, if it's text/svg then we have the `color` change, if it's a container then we have the `border-color` change, otherwise nothing changes.
+ * - The animation would be created as a keyframes however, we'll apply if various elements by default. If required, we can make it a class.
+*/
