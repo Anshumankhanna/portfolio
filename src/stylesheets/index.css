@@ -2,9 +2,6 @@
 @import "utility.css";
 
 :root {
-	/* Global common variables. */
-	--dark-theme-bg-color: #27272a;
-
 	--clr-select: oklch(72.3% 0.219 149.579);
 	/* This color is to be used when something is to be highlighted. */
 	--active-color: oklch(72.3% 0.219 149.579);

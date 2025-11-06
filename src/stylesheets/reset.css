@@ -22,7 +22,7 @@ footer {
 
 html {
 	/* Automatically sets a light and dark theme. */
-	color-scheme: light dark;
+	color-scheme: dark;
 }
 
 html,
@@ -31,10 +31,6 @@ body {
 	height: 100%;
 
 	font-family: system-ui, sans-serif;
-}
-
-body {
-	background-color: var(--dark-theme-bg-color, #27272a);
 }
 
 #root {

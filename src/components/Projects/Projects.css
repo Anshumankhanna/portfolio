@@ -1,11 +1,7 @@
 .projects {
-	--vertical-gap: 1rem;
-
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: var(--vertical-gap);
-
-	padding: var(--vertical-gap) 1.5rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
 }
 
 .project__card {
@@ -17,26 +13,24 @@
 
 	height: fit-content;
 	/* May reuse these values */
-	padding: var(--vertical-gap) 1rem;
+	padding-inline: 1rem;
 
-	border: 1px solid;
-	border-radius: 1rem;
-
-	text-align: justify;
-
-	&>img {
-		width: 100%;
-		height: auto;
-		aspect-ratio: 1;
-		margin-inline: auto;
-
-		border-radius: inherit;
+	& .project__title {
+		display: inline;
+		margin-right: 0.75rem;
 	}
 
-	&>h2 {
-		text-align: center;
-		text-decoration: underline;
+	& .skill__list {
+		display: inline;
+		font-size: 0.85rem;
 
-		font-size: 1.45rem;
+		&>li {
+			display: inline;
+		}
+	}
+
+	&>.project__list {
+		list-style-type: disc;
+		text-align: justify;
 	}
 }

@@ -51,12 +51,16 @@
 
 .section--border {
 	border: 2px solid;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 }
 
 .text-highlight {
 	/* Using `em` makes sure that we are not setting a fixed highlight size for text but just always keeping it larger tthan the other text around it. */
 	font-size: 1.5em;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 .pf-icon {
