@@ -1,0 +1,13 @@
+.hero-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-section__content {
+	width: max-content;
+}
+
+.links__list {
+	display: flex;
+}
