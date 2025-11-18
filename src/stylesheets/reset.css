@@ -17,6 +17,11 @@ body {
 
 body {
 	font-family: system-ui, sans-serif;
+
+	&::selection {
+		background-color: var(--highlight-color);
+		color: #fff;
+	}
 }
 
 #root {

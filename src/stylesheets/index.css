@@ -4,4 +4,6 @@
 :root {
 	--nav-height: 4.35rem;
 	--main-child-height: calc(100vh - var(--nav-height));
+
+	--highlight-color: oklch(64.8% 0.2 131.684);
 }

@@ -4,7 +4,7 @@ nav {
 }
 
 .nav__list {
-	--hightlight-color: oklch(64.8% 0.2 131.684);
+	/* We are setting this variable because we want a consistent horizontal spacing which includes `gap` & `padding` & we want them to always be same. */
 	--inline-spacing: 1rem;
 
 	display: flex;
@@ -29,13 +29,8 @@ nav {
 		border: 2px solid transparent;
 
 		&:hover {
-			border-color: var(--hightlight-color);
-			color: var(--hightlight-color);
-		}
-
-		&::selection {
-			background-color: var(--hightlight-color);
-			color: #fff;
+			border-color: var(--highlight-color);
+			color: var(--highlight-color);
 		}
 	}
 }
