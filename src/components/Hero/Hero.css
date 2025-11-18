@@ -1,0 +1,55 @@
+.hero-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-section__content>hgroup {
+	/* We are creating a layout in `hgroup` in which `h1` dominates the `width` of `hgroup`.
+	 * For this we have given the following property to `hgroup` `width: min-content`.
+	 * This property would lead to `hgroup` taking the width in which it can display without any problem the element with the smallest width.
+	 * However, none of the elements inside `hgroup` have a fixed width which would lead it to collapse to display stuff word by word.
+	 * To tackle this we have given `h1` the property `width: max-content` so that `h1` scales to fit everything in it.
+	 * Now since, `h1` has a fixed width, `hgroup` has to respect that when having `min-content` width and hence our layout width is dominated by `h1`.
+	*/
+	width: min-content;
+	font-size: 2rem;
+
+	/* We are using `em` units here since we want all of these elements to change their font-size in a uniform manner. */
+	&>h1 {
+		width: max-content;
+		font-size: 2.5em;
+	}
+
+	&>.subtext {
+		font-size: 1.5em;
+	}
+
+	&>.description {
+		padding-block: 0.5em;
+		font-size: 0.75em;
+	}
+}
+
+.links__list {
+	display: flex;
+	justify-content: space-around;
+
+	&>li {
+		padding: 0.5rem 1rem;
+
+		border: 2px solid transparent;
+		border-radius: 100vw;
+
+		&>a {
+			display: block;
+			width: 2rem;
+			height: 2rem;
+		}
+
+		&:hover {
+			border-color: var(--highlight-color);
+			color: var(--highlight-color);
+		}
+	}
+}

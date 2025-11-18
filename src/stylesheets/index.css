@@ -1,21 +1,9 @@
 @import "reset.css";
-@import "utility.css";
+/* @import "utility.css"; */
 
 :root {
-	--clr-select: oklch(72.3% 0.219 149.579);
-	/* This color is to be used when something is to be highlighted. */
-	--active-color: oklch(72.3% 0.219 149.579);
+	--nav-height: 4.35rem;
+	--main-child-height: calc(100vh - var(--nav-height));
 
-	--p-container: 0.25rem 0.75rem;
-	--p-button: 0.25em 1em;
-
-	/* Media queries. */
-	@media (min-width: 600px) {
-		--p-container: 1rem 3rem;
-	}
-}
-
-* {
-	/* Private variables, that can be changed in individual elements. */
-	--_clr-selection: var(--clr-selection, oklch(52.7% 0.154 150.069));
+	--highlight-color: oklch(64.8% 0.2 131.684);
 }
