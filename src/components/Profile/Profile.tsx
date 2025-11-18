@@ -2,7 +2,7 @@ import "@/components/Profile/Profile.css";
 
 export default function Profile() {
 	return (
-		<address className="profile">
+		<address className="profile section--border">
 			<hgroup className="profile__hgroup">
 				<h1 className="profile__name">Anshuman Khanna</h1>
 				<p className="profile__title">Software Engineer</p>
