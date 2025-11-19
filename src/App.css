@@ -1,4 +1,8 @@
 /* TODO(#2): In App.css. */
-main>* {
+main>section {
+	--vertical-padding: 1.5rem;
+
 	height: var(--main-child-height);
+	/* Here we are keeping the horizontal padding double of the vertical padding since vertical padding will stack for sections & appear as double the gap. */
+	padding: var(--vertical-padding) calc(var(--vertical-padding) * 2);
 }
