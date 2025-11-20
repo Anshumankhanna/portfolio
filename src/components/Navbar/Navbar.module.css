@@ -24,6 +24,7 @@ nav {
 	backdrop-filter: blur(10px);
 
 	font-size: 1.25rem;
+	list-style-type: none;
 
 	&>li {
 		padding: 0.25rem 1rem;

@@ -1,1 +1,3 @@
-.projects__section {}
+.project__heading {
+	display: inline-block;
+}
