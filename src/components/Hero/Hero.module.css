@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	height: var(--page-height-with-nav);
 }
 
 .hero-section__content>hgroup {
