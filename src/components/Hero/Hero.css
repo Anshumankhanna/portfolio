@@ -28,6 +28,14 @@
 	&>.description {
 		padding-block: 0.5em;
 		font-size: 0.75em;
+
+		&>.non-developers {
+			color: #0ff;
+		}
+
+		&>.developers {
+			color: #0f0;
+		}
 	}
 }
 

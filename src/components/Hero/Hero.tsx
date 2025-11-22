@@ -12,7 +12,14 @@ export default function Hero() {
 				*/}
 				<h1>Anshuman Khanna</h1>
 				<p className="subtext">Software Engineer</p>
-				<p className="description">I live to keep learning & constant learning blesses you with more skills than one.</p>
+				<p className="description">
+					<span className="non-developers">For non-developers: </span>
+					<span>Let's revolutionize the world with the power of AI.</span>
+				</p>
+				<p className="description">
+					<span className="developers">For developers: </span>
+					<span>I can build anything from CLI to package managers to web applications.</span>
+				</p>
 			</hgroup>
 			<address>
 				<ul className="links__list">
