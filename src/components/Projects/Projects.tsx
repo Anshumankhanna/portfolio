@@ -1,5 +1,5 @@
 import style from "@/components/Projects/Projects.module.css";
-import projects from "@/utilities/projects-data";
+import projects from "@/utilities/projects-data.json";
 
 export default function Projects() {
 	return <section id="projects">
