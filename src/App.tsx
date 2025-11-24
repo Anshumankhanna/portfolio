@@ -1,4 +1,4 @@
-import "@/App.module.css";
+import styles from "@/App.module.css";
 
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
@@ -8,7 +8,7 @@ import Experiences from "@/components/Experiences/Experiences";
 export default function App() {
 	return <div>
 		<Navbar />
-		<main>
+		<main className={styles["main"]}>
 			<Hero />
 			<Experiences />
 			<Projects />
