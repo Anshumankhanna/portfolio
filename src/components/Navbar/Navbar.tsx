@@ -1,15 +1,15 @@
-import "@/components/Navbar/Navbar.css";
+import styles from "@/components/Navbar/Navbar.module.css";
 
 export default function Navbar() {
 	return <>
 		{/* `nav` is here just for its sematnic meaning. */}
 		<nav>
-			<ul className="nav__list">
-				<li><a href="">Home</a></li>
+			<ul className={styles["nav__list"]}>
+				<li><a href="/">Home</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#contacts">Contact</a></li>
 			</ul>
 		</nav>
 	</>;
-}
+};

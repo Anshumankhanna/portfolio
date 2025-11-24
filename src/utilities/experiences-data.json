@@ -1,0 +1,22 @@
+[
+	{
+		"title": "MSIT",
+		"role": "Software Developer",
+		"date": null,
+		"description": [
+			"Re-designed grievance portal improving UI/UX of the portal adding tabular data, diagrams and piecharts for better data visualization interpretation.",
+			"Improved loading speed between pages of the grievance portal by identifying a vulnerability introduced due to use of Next.js middleware dependent routing.",
+			"Improved scalability by introducing a fresh database architecture, which prevents potential DDOS attacks as well."
+		]
+	},
+	{
+		"title": "Non-blocking HTTP server in C",
+		"role": "Software Intern",
+		"date": null,
+		"description": [
+			"Worked on upgrading FinnOne for General Motors which is one of the flagship products of the company made using Java8 & SpringBoot.",
+			"Applied advanced principles to optimize the design architecture, increasing production speed and improving code modularity.",
+			"Reduced technical debt by implementing scalable styling practices, ensuring streamlined, efficient development for future product enhancements."
+		]
+	}
+]

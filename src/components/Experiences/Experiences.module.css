@@ -1,0 +1,18 @@
+.experience {
+	--block-padding: 0.5rem;
+
+	padding-block: var(--block-padding);
+
+	&:first-child {
+		padding-top: calc(2 * var(--block-padding));
+	}
+}
+
+.experience--heading {
+	display: inline flex;
+	column-gap: 1rem;
+
+	&>p {
+		font-style: italic;
+	}
+}

@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	height: var(--page-height-with-nav);
 }
 
 .hero-section__content>hgroup {
@@ -26,8 +28,12 @@
 	}
 
 	&>.description {
-		padding-block: 0.5em;
+		padding-block: 0.5rem;
 		font-size: 0.75em;
+
+		&:last-child {
+			padding-top: 0;
+		}
 
 		&>.non-developers {
 			color: #0ff;
@@ -42,6 +48,8 @@
 .links__list {
 	display: flex;
 	justify-content: space-around;
+
+	list-style-type: none;
 
 	&>li {
 		padding: 0.5rem 1rem;

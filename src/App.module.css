@@ -1,0 +1,14 @@
+main {
+	font-size: 1.2rem;
+
+	&>section {
+		--vertical-padding: 1.5rem;
+		/* Here we are keeping the horizontal padding double of the vertical padding since vertical padding will stack for sections & appear as double the gap. */
+		padding: var(--vertical-padding) calc(var(--vertical-padding) * 2);
+	}
+
+	&>section>h2:first-child {
+		font-size: 1.8em;
+		text-decoration: underline;
+	}
+}
