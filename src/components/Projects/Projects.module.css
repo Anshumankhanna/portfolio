@@ -16,6 +16,7 @@
 		display: flex;
 		column-gap: 0.5rem;
 
+		font-style: italic;
 		list-style-type: none;
 
 		&>li::after {

@@ -1,29 +1,22 @@
 [
 	{
-		"title": "WebMorph",
-		"skills": ["React.js", "Next.js", "TypeScript", "Deno", "Mistral AI", "Python"],
+		"title": "MSIT",
+		"role": "Software Developer",
 		"date": null,
 		"description": [
-			"Developed Python-based microservice & RESTful API deployed on Render to create recommendation system chatbot.",
-			"Boosted speed of creation of website exponentially by eliminating the need to study web design concepts, making prototyping faster."
-		]
-	},
-	{
-		"title": "Snip",
-		"skills": ["TypeScript", "Node.js", "Bash", "Powershell", "VS Code"],
-		"date": null,
-		"description": [
-			"Improved developer experience by allowing users to create VS Code Snippets without needing to manually write the code and instead manipulating snippet files from the terminal.",
-			"Created a Command Line Interface utilizing Node.js and Powershell capabilities to create VS Code Snippets."
+			"Re-designed grievance portal improving UI/UX of the portal adding tabular data, diagrams and piecharts for better data visualization interpretation.",
+			"Improved loading speed between pages of the grievance portal by identifying a vulnerability introduced due to use of Next.js middleware dependent routing.",
+			"Improved scalability by introducing a fresh database architecture, which prevents potential DDOS attacks as well."
 		]
 	},
 	{
 		"title": "Non-blocking HTTP server in C",
-		"skills": ["C", "CMake", "WSL", "Docker"],
+		"role": "Software Intern",
 		"date": null,
 		"description": [
-			"Asynchronous high performance HTTP server in C developed on WSL utilizing Linux APIs.",
-			"Worked with WSL, Docker and AWS like technologies for development and deployment of the server"
+			"Worked on upgrading FinnOne for General Motors which is one of the flagship products of the company made using Java8 & SpringBoot.",
+			"Applied advanced principles to optimize the design architecture, increasing production speed and improving code modularity.",
+			"Reduced technical debt by implementing scalable styling practices, ensuring streamlined, efficient development for future product enhancements."
 		]
 	}
 ]
