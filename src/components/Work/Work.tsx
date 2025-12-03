@@ -8,7 +8,7 @@ export default function WorkComponent({ dataArr }: { dataArr: WorkPropsType }) {
 	const id = "role" in dataArr[0] ? "experiences" : "projects";
 
 	return <section id={id}>
-		<h2>{`${id[0].toUpperCase()}${id.substring(1)}`}</h2>
+		<h2>{id}</h2>
 		<ol className={styles["work-list"]}>
 			{dataArr.length != 0 && dataArr.map((data, data_index) => (
 				<li key={data_index} className={styles["work"]}>

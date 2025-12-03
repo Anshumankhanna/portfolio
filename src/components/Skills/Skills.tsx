@@ -1,25 +1,36 @@
 import styles from "@/components/Skills/Skills.module.css";
-// import type { ReactElement, SVGProps } from "react";
-//
-// type SkillType = {
-// 	icon: ReactElement<SVGProps<SVGSVGElement>>;
-// 	name: string;
-// };
-//
-// function Skill({ icon, name }: SkillType) {
-// 	return <div>
-// 		{icon}
-// 		<span>{name}</span>
-// 	</div>
-// }
+import tsLogo from "@/assets/images/logo/typescript.svg";
+import jsLogo from "@/assets/images/logo/javascript.svg";
+
+function Skill({ href, icon, name }: {
+	href: string;
+	icon: string;
+	name: string;
+}) {
+	return <a href={href} className={styles["skill"]}>
+		<img src={icon} alt={name} />
+		<p>{name}</p>
+	</a>
+}
 
 export default function Skills() {
-	return <section className={styles["skills"]}>
+	return <section id="skills" className={styles["skills__section"]}>
 		<h2>Skills</h2>
 		<ul className={styles["skills__list"]}>
-			{/*<Skill
-				icon={}
-			/>*/}
+			<li>
+				<Skill
+					href=""
+					icon={tsLogo}
+					name="typescript"
+				/>
+			</li>
+			<li>
+				<Skill
+					href=""
+					icon={jsLogo}
+					name="javascript"
+				/>
+			</li>
 		</ul>
 	</section>
 };

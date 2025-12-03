@@ -11,8 +11,9 @@
 		padding: var(--vertical-padding) calc(var(--vertical-padding) * 2);
 	}
 
-	&>section>h2:first-child {
+	&>section>h2 {
 		font-size: 1.8em;
+		text-transform: capitalize;
 		text-decoration: underline;
 	}
 

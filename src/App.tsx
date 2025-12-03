@@ -6,6 +6,7 @@ import projects from "@/utilities/projects-data.json";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import WorkComponent from "@/components/Work/Work";
+import Skills from "@/components/Skills/Skills";
 
 export default function App() {
 	return <div>
@@ -19,6 +20,7 @@ export default function App() {
 			<hr />
 			<WorkComponent dataArr={projects} />
 			<hr />
+			<Skills />
 		</main>
 	</div>;
 }
