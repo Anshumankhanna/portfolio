@@ -1,10 +1,7 @@
-.skills__section {
-	height: 100vh;
-}
-
 .skills__list {
 	display: flex;
-	column-gap: 0.5em;
+	gap: 0.5rem;
+	flex-wrap: wrap;
 
 	padding-block: 1rem 0;
 
@@ -17,8 +14,14 @@
 
 	padding: 0.5em 1em;
 
-	border: 1px solid white;
+	border: 1px solid transparent;
 	border-radius: 0.45rem;
+
+	background-color: oklch(44.2% 0.017 285.786);
+
+	&:hover {
+		border-color: #fff;
+	}
 
 	&>img {
 		width: 1.25em;
