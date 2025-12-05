@@ -8,26 +8,23 @@
 
 .nav__list {
 	/* We are setting this variable because we want a consistent horizontal spacing which includes `gap` & `padding` & we want them to always be same. */
-	--inline-spacing: 1rem;
-
 	display: flex;
 	justify-content: center;
-	column-gap: var(--inline-spacing);
+	column-gap: 0;
 
 	width: fit-content;
 	margin-inline: auto;
-	padding: 0.5rem calc(1.5 * var(--inline-spacing));
+	padding: 0.5rem 1rem;
 
 	border-radius: 100vw;
 
 	background-color: #ffffff0a;
 	backdrop-filter: blur(10px);
 
-	font-size: 1.25rem;
 	list-style-type: none;
 
 	&>li {
-		padding: 0.25rem 1rem;
+		padding: 0.25rem 0.5rem;
 
 		border-radius: 100vw;
 		border: 2px solid transparent;
@@ -36,5 +33,13 @@
 			border-color: var(--highlight-color);
 			color: var(--highlight-color);
 		}
+	}
+
+	@media (min-width: 600px) {
+		--inline-spacing: 1rem;
+
+		column-gap: var(--inline-spacing);
+		padding: 0.5rem calc(1.5 * var(--inline-spacing));
+		font-size: 1.35rem;
 	}
 }

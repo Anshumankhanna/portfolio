@@ -9,7 +9,7 @@ export default function WorkComponent({ dataArr }: { dataArr: WorkPropsType }) {
 
 	return <section id={id}>
 		<h2>{id}</h2>
-		<ol className={styles["work-list"]}>
+		<ul className={styles["work-list"]}>
 			{dataArr.length != 0 && dataArr.map((data, data_index) => (
 				<li key={data_index} className={styles["work"]}>
 					<div className={styles["heading"]}>
@@ -35,6 +35,6 @@ export default function WorkComponent({ dataArr }: { dataArr: WorkPropsType }) {
 					</ul>
 				</li>
 			))}
-		</ol>
+		</ul>
 	</section>;
 };

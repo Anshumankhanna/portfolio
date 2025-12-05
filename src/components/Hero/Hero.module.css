@@ -18,15 +18,6 @@
 	font-size: 2rem;
 
 	/* We are using `em` units here since we want all of these elements to change their font-size in a uniform manner. */
-	&>h1 {
-		width: max-content;
-		font-size: 2.5em;
-	}
-
-	&>.subtext {
-		font-size: 1.5em;
-	}
-
 	&>.description {
 		padding-block: 0.5rem;
 		font-size: 0.75em;
@@ -41,6 +32,17 @@
 
 		&>.developers {
 			color: #0f0;
+		}
+	}
+
+	@media (min-width: 600px) {
+		&>h1 {
+			width: max-content;
+			font-size: 2.5em;
+		}
+
+		&>.subtext {
+			font-size: 1.5em;
 		}
 	}
 }
