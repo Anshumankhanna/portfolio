@@ -4,8 +4,7 @@
 		"skills": ["React.js", "Next.js", "TypeScript", "Deno", "Mistral AI", "Python"],
 		"date": null,
 		"description": [
-			"Developed Python-based microservice & RESTful API deployed on Render to create recommendation system chatbot.",
-			"Boosted speed of creation of website exponentially by eliminating the need to study web design concepts, making prototyping faster."
+			"A template site that allows you to visualise it with different layouts and color themes using the power of AI helping the design decision making process with quick prototyping."
 		]
 	},
 	{
@@ -13,8 +12,7 @@
 		"skills": ["TypeScript", "Node.js", "Bash", "Powershell", "VS Code"],
 		"date": null,
 		"description": [
-			"Improved developer experience by allowing users to create VS Code Snippets without needing to manually write the code and instead manipulating snippet files from the terminal.",
-			"Created a Command Line Interface utilizing Node.js and Powershell capabilities to create VS Code Snippets."
+			"CLI tool that allows for speedy snippet creating in VS Code automating the process for any and every language that is supported by the IDE, used by 300+ developers"
 		]
 	},
 	{
@@ -22,8 +20,7 @@
 		"skills": ["C", "CMake", "WSL", "Docker"],
 		"date": null,
 		"description": [
-			"Asynchronous high performance HTTP server in C developed on WSL utilizing Linux APIs.",
-			"Worked with WSL, Docker and AWS like technologies for development and deployment of the server"
+			"Asynchronous high performance HTTP server in C developed on WSL utilizing Linux APIs."
 		]
 	}
 ]
