@@ -1,40 +1,60 @@
 import styles from "@/components/Work/Work.module.css";
-import projects from "@/utilities/projects-data.json";
-import experiences from "@/utilities/experiences-data.json";
 
-type WorkPropsType = typeof projects | typeof experiences;
+export default function WorkComponent({ id }: { id: "experiences" | "projects" }) {
+	const experiences = Object.freeze([
+		{
+			title: "MSIT",
+			skill: "Software Developer",
+			description: <>
+				Designed, developed and maintained a grievance portal used by <b>2000+</b> students, teachers and parents using serverless architecture implemented in Next.js, TypeScript and MongoDB.
+			</>
+		},
+		{
+			title: "Nucleus Software",
+			skill: "Software Intern",
+			description: <>
+				Redesigned FinnOne for General Motors which is a flagship product of the company and cleared redundant code, improving performance and contributing to better frontend architecture.
+			</>
+		}
+	]);
+	const projects = Object.freeze([
+		// {
+		// 	title: "WebMorph",
+		// 	skill: "React.js, Next.js, TypeScript, Deno, Mistral AI, Python",
+		// 	description: <>
+		// 		Template site that allows you to visualise a website with different layouts and color themes using the power of AI helping the design decision making process with quick prototyping."
+		// 	</>
+		// },
+		{
+			title: "Snip",
+			skill: "TypeScript, Node.js, Bash, Powershell, VS Code",
+			description: <>
+				CLI tool that allows for speedy snippet creating in VS Code automating the process for any and every language that is supported by the IDE, used by <b>300+</b> developers.
+			</>
+		},
+		{
+			title: "Non-blocking HTTP server in C",
+			skill: "C, CMake, WSL, Docker",
+			description: <>
+				Asynchronous high performance HTTP server in C developed on WSL utilizing Linux APIs.
+			</>
+		}
+	]);
+	const dataArr = Object.freeze(id === "experiences" ? experiences : projects);
 
-export default function WorkComponent({ dataArr }: { dataArr: WorkPropsType }) {
-	const id = "role" in dataArr[0] ? "experiences" : "projects";
-
-	return <section id={id}>
+	return <section className={styles[id]} id={id}>
 		<h2>{id}</h2>
 		<ul className={styles["work-list"]}>
-			{dataArr.length != 0 && dataArr.map((data, data_index) => (
-				<li key={data_index} className={styles["work"]}>
-					<div className={styles["heading"]}>
+			{dataArr.length > 0 && dataArr.map((data, data_index) => (
+				<li key={data_index} className={styles["work"]} >
+					<hgroup className={styles["heading"]}>
 						<h3>{data.title}</h3>
-						{"role" in data &&
-							<p>{data.role}</p>
-						}
-						{"skills" in data &&
-							<ul>
-								{data.skills.length != 0 && data.skills.map((skill, skill_index) => (
-									<li key={skill_index}>
-										{/* In this `li` we are going to add a `::after` pseudo-element because of which there is no seperation between `::after` and the text that is skill, to have a seperation of elements we are adding a `span` to encapsulate the text. */}
-										<span>{skill}</span>
-									</li>
-								))}
-							</ul>
-						}
-					</div>
-					<ul className={styles["description-list"]}>
-						{data.description.length != 0 && data.description.map((point, description_index) => (
-							<li key={description_index}>{point}</li>
-						))}
-					</ul>
+						<p>{data.skill}</p>
+					</hgroup>
+					<hr />
+					<p className={styles["description"]}>{data.description}</p>
 				</li>
 			))}
 		</ul>
-	</section>;
+	</section >;
 };

@@ -1,3 +1,7 @@
+.skills__section>h2 {
+	color: oklch(71.2% 0.194 13.428);
+}
+
 .skills__list {
 	display: flex;
 	gap: 0.5rem;
@@ -20,7 +24,7 @@
 	background-color: oklch(44.2% 0.017 285.786);
 
 	&:hover {
-		border-color: #fff;
+		border-color: oklch(81% 0.117 11.638);
 	}
 
 	&>img {

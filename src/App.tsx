@@ -1,8 +1,5 @@
 import styles from "@/App.module.css";
 
-import experiences from "@/utilities/experiences-data.json";
-import projects from "@/utilities/projects-data.json";
-
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import WorkComponent from "@/components/Work/Work";
@@ -16,9 +13,9 @@ export default function App() {
 		<main className={styles["main"]}>
 			<Hero />
 			<hr />
-			<WorkComponent dataArr={experiences} />
+			<WorkComponent id="experiences" />
 			<hr />
-			<WorkComponent dataArr={projects} />
+			<WorkComponent id="projects" />
 			<hr />
 			<Skills />
 		</main>

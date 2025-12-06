@@ -132,7 +132,7 @@ export default function Skills() {
 		},
 	];
 
-	return <section id="skills">
+	return <section id="skills" className={styles["skills__section"]}>
 		<h2>Skills</h2>
 		<ul className={styles["skills__list"]}>
 			{skills_data.length > 0 && skills_data.map((skill, skill_index) => (
